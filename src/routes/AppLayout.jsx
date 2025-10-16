@@ -1,8 +1,8 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-
 import CommunityImpactSection from "./../pages/CommunityEvents";
 import FlagshipProgramsSection from "./../pages/FlagShipProg";
 import HomeSection from "./../pages/Home";
+import AboutSection from "./../pages/About";
 import OurTeam from "./../pages/OurTeam";
 import PastEvents from "./../pages/PastEvent";
 import PlanOfAction from "./../pages/PlanOfAction";
@@ -11,6 +11,7 @@ import WeeklyCadenceSection from "./../pages/WeeklyCadence";
 import WorkshopsSection from "./../pages/WorkShop";
 import Footer from "./../ui/Footer";
 import Navigation from "./../ui/Navigation";
+import GlassNavbar from "./../ui/GlassNavbar";
 import sections from "./RouteLinkSession";
 import Contact from "../pages/Contact";
 
@@ -26,13 +27,15 @@ function AppLayout() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation sections={sections} currentPage={getCurrentPage()} />
+    <div className="min-h-screen bg-black text-white">
+      <GlassNavbar />
+  <Navigation sections={sections} currentPage={getCurrentPage()} />
 
-      <main>
+  <main className="pt-24 md:pt-28">
         <Routes>
           <Route path="/" element={<HomeSection />} />
           <Route path="/past-events" element={<PastEvents />} />
+          <Route path="/about" element={<AboutSection />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/plan-of-action" element={<PlanOfAction />} />
           <Route
