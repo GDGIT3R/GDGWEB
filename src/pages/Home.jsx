@@ -7,14 +7,14 @@ import HomeSessions from "../features/home/HomeSessions";
 
 const HomeSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-indigo-400 to-indigo-200  via-indigo-600 text-white">
+  <section className="min-h-screen bg-gradient-to-br from-indigo-400 to-indigo-200  via-indigo-600 text-white">
       <div className="relative">
         <HomeFirstPage />
         <HomeLbc />
       </div>
       <HomeInfoPage />
       {/* About Us Section */}
-      <div className="py-16 container mx-auto px-12 md:px-20 lg:px-32 xl:px-40 ">
+      <div className="py-12 container mx-auto px-8 md:px-16 lg:px-28 xl:px-36 bg-[#f0f0f0] rounded-2xl">
         <div>
           <HomeAbout />
           <HomeOurWork />

@@ -31,7 +31,7 @@ function AppLayout() {
       <GlassNavbar />
   <Navigation sections={sections} currentPage={getCurrentPage()} />
 
-  <main className="pt-24 md:pt-28">
+  <main className="pt-24 md:pt-28 px-6 md:px-12 lg:px-20">
         <Routes>
           <Route path="/" element={<HomeSection />} />
           <Route path="/past-events" element={<PastEvents />} />

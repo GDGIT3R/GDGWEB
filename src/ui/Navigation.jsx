@@ -31,10 +31,13 @@ const Navigation = ({ sections, currentPage }) => {
 
   return (
     <>
-      {/* Backdrop overlay */}
+      {/* Backdrop overlay (blur + dim) */}
       <div
-        className={`fixed inset-0  bg-opacity-400 z-40 transition-opacity duration-300 ${
-          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        aria-hidden={!isMenuOpen}
+        className={`fixed inset-0 z-40 transition-all duration-300 ease-out ${
+          isMenuOpen
+            ? "opacity-100 pointer-events-auto backdrop-blur-sm bg-black/30"
+            : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setIsMenuOpen(false)}
       />

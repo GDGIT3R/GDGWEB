@@ -48,14 +48,14 @@ export default function GlassNavbar() {
             to={link.to}
             end={link.to === '/'}
             className={({ isActive }) =>
-              `px-5 py-3 rounded-full transition-all duration-200 ease-out select-none text-base md:text-lg lg:text-xl font-semibold ${
+              `px-6 py-3 rounded-full transition-all duration-200 ease-out select-none text-lg md:text-xl lg:text-2xl font-extrabold ${
                 isActive
                   ? 'bg-white/10 text-yellow-300 shadow-sm scale-105 ring-1 ring-white/20'
                   : 'text-white hover:bg-white/10 hover:scale-105'
               }`
             }
           >
-            <span className="relative drop-shadow-lg text-base md:text-lg lg:text-xl tracking-wide">{link.label}</span>
+            <span className="relative drop-shadow-lg text-lg md:text-xl lg:text-2xl tracking-wide">{link.label}</span>
           </NavLink>
         ))}
       </div>
