@@ -1,6 +1,6 @@
-import LeadTeam from "./../../data/MemberData/PRTeam";
+import PRTeam from "../../data/MemberData/PRTeam";
 
-function Lead() {
+function PR() {
   return (
     <>
       <div className="text-center mt-16 mb-16">
@@ -12,7 +12,7 @@ function Lead() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10">
-        {LeadTeam.map((member) => (
+        {PRTeam.map((member) => (
           <div
             key={member.id}
             className="home-sessions home-margin rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-200 hover:border-blue-300"
@@ -36,4 +36,4 @@ function Lead() {
   );
 }
 
-export default Lead;
+export default PR;

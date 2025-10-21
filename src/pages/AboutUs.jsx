@@ -201,12 +201,14 @@ const AboutUs = () => {
               learning, innovation, and growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600  px-8 py-4 rounded-2xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+              <a href="https://chat.whatsapp.com/IwSRExc7Nq25ISZ8oBR6fI" target="_blank">
+              <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600  px-8 py-4 rounded-2xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
                 Join Now
               </button>
-              <button className="border border-white/30  px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all duration-300">
+              </a>
+              {/* <button className="border border-white/30  px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 transition-all duration-300">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </motion.div>
         </div>

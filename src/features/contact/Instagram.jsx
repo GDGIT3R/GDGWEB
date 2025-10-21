@@ -20,11 +20,14 @@ const Instagram = () => {
             tips, and community highlights.
           </p>
           <div className="flex items-center gap-4 flex-wrap">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
-              Follow @GDGCommunity
+            <a href="https://www.instagram.com/gdg_iter" target="_blank">
+
+            <button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+              Follow @GDG_ITER
             </button>
+            </a>
             <span className="text-yellow-600 font-bold text-lg">
-              5.2K Followers
+              1.8K Followers
             </span>
           </div>
         </div>

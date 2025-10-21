@@ -1,6 +1,14 @@
 const PRTeam = [
   {
     id: 1,
+    name: "Harsh Kumar",
+    team: "Lead",
+    linkedin: "https://www.linkedin.com/in/harsh-kumar-173410306",
+    role: "Management & PR Lead",
+    image: "/LeadTeam/Harsh.jpg",
+  },
+  {
+    id:2,
     name: "Vanshika Malani",
     team: "Media, PR",
     linkedin: "https://www.linkedin.com/in/vanshika-malani-8074662b8",
@@ -8,7 +16,7 @@ const PRTeam = [
     image: "/PrTeam/vanshika.jpg",
   },
   {
-    id: 2,
+    id: 3,
     name: "Sushruta Kar",
     team: "Outreach",
     linkedin: "https://www.linkedin.com/in/sushruta-kar-02034031b",
@@ -16,7 +24,7 @@ const PRTeam = [
     image: "/PrTeam/sushruta.jpg",
   },
   {
-    id: 3,
+    id: 4,
     name: "Dev Kumar Gupta",
     team: "PR",
     linkedin: "https://www.linkedin.com/in/dev-kumar-gupta-3213712b5",
@@ -24,7 +32,7 @@ const PRTeam = [
     image: "/PrTeam/DevGupta.jpg",
   },
   {
-    id: 4,
+    id: 5,
     name: "Soham Banerjee",
     team: "PR",
     linkedin: "https://www.linkedin.com/in/sohamoftech",
@@ -32,7 +40,7 @@ const PRTeam = [
     image: "/PrTeam/soham.jpg",
   },
   {
-    id: 5,
+    id: 6,
     name: "Debasis Das",
     team: "PR, Management",
     linkedin: "https://www.linkedin.com/in/debasis-das-310a672a3",
@@ -40,7 +48,7 @@ const PRTeam = [
     image: "/PrTeam/DebasisDas.jpg",
   },
   {
-    id: 6,
+    id: 7,
     name: "Shaswat Mishra",
     team: "PR, Management",
     linkedin: "",

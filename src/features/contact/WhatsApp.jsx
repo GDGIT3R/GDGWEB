@@ -22,9 +22,12 @@ const WhatsApp = () => {
             casual conversations with community members.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+            <a href="https://chat.whatsapp.com/IwSRExc7Nq25ISZ8oBR6fI" target="_blank">
+            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 cursor-pointer">
               Main Community Group
+
             </button>
+            </a>
             <button className="bg-white/20 hover:bg-white/30  px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
               Study Groups
             </button>

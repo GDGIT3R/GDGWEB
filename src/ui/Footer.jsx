@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, ExternalLink, Heart } from "lucide-react";
+import { MapPin, ExternalLink, Heart, Github, MessageCircle, Instagram } from "lucide-react";
 import logo from "./../assets/logo2.png";
 
 const Footer = () => {
@@ -13,32 +13,28 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      name: "Discord",
-      icon: "D",
-      url: "#",
-      color: "bg-purple-500 hover:bg-purple-600",
-      label: "D",
-    },
-    {
-      name: "LinkedIn",
-      icon: "in",
-      url: "#",
-      color: "bg-blue-600 hover:bg-blue-700",
-      label: "in",
-    },
-    {
-      name: "Twitter",
-      icon: "🐦",
-      url: "#",
-      color: "bg-sky-400 hover:bg-sky-500",
-      label: "🐦",
-    },
-    {
       name: "GitHub",
-      icon: "⚡",
-      url: "#",
+      // 💡 Added the Github icon component
+      icon: Github, 
+      url: "https://github.com/GDGIT3R",
       color: "bg-gray-700 hover:bg-gray-800",
-      label: "⚡",
+      label: "GitHub", // Changed label from "⚡" to a string for better accessibility/tooltip
+    },
+    {
+      name: "Whatsapp",
+      // 💡 Added the MessageCircle icon as a substitute for Whatsapp
+      icon: MessageCircle, 
+      url: "https://chat.whatsapp.com/IwSRExc7Nq25ISZ8oBR6fI",
+      color: "bg-green-500 hover:bg-green-600", // Changed color for a more WhatsApp look
+      label: "WhatsApp",
+    },
+    {
+      name: "Instagram",
+      // 💡 Added the Instagram icon component
+      icon: Instagram, 
+      url: "https://www.instagram.com/gdg_iter",
+      color: "bg-pink-500 hover:bg-pink-600", // Changed color for a more Instagram look
+      label: "Instagram",
     },
   ];
 
@@ -150,9 +146,9 @@ const Footer = () => {
                     className={`w-12 h-12 ${social.color} rounded-2xl flex items-center justify-center text-white font-semibold transition-all duration-300 transform hover:scale-110 hover:shadow-lg group relative`}
                     aria-label={`Follow us on ${social.name}`}
                   >
-                    <span className="group-hover:scale-110 transition-transform duration-200">
-                      {social.label}
-                    </span>
+                    {/* 💡 Rendering the Icon component here */}
+                    <social.icon className="w-6 h-6 group-hover:scale-110 transition-transform duration-200" />
+                    
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                       {social.name}
                     </div>
